@@ -17,7 +17,9 @@ import {
   Globe,
   Share2,
   Download,
-  ExternalLink
+  ExternalLink,
+  Users,
+  Building2
 } from 'lucide-react';
 
 export interface Lesson {
@@ -57,6 +59,8 @@ export const COMMANDS = {
     { id: 'aulas', name: 'Aulas', icon: Video, description: 'Mapa de aulas do curso' },
     { id: 'cursos', name: 'Cursos', icon: Award, description: 'Nossos cursos e certificados' },
     { id: 'familias', name: 'Familias', icon: Library, description: 'Biblioteca de famílias Revit' },
+    { id: 'fachada', name: 'Espessura Fachada', icon: Building2, description: 'Espessura de linha de fachadas' },
+    { id: 'vip', name: 'Grupo VIP', icon: Users, description: 'Acesse o grupo VIP' },
     { id: 'instagram', name: 'Instagram', icon: Instagram, description: 'Siga Alan no Instagram' },
     { id: 'whatsapp', name: 'Whatsapp', icon: MessageCircle, description: 'Fale com o suporte' }
   ],

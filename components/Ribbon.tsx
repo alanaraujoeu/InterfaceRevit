@@ -874,7 +874,6 @@ function RibbonPanel({title, children, whiteTitle = false}: {title: string; chil
 }
 
 function RibbonButton({name, icon, size = 'large', onClick, href}: {name: string; icon: string | React.ElementType; size?: 'large' | 'small'; onClick?: () => void; href?: string}) {
-  console.log('RibbonButton name:', name, 'icon:', icon);
   if (!icon) return null;
   const handleClick = () => {
     if (href) {
