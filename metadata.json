@@ -1,0 +1,9 @@
+{
+  "name": "NaaviBee1",
+  "description": "Plataforma interativa de Revit e BIM da Bee1 Academy.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}

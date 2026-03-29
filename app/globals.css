@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #1E1E1E;
+  --color-surface-variant: #2D2D2D;
+  --color-on-surface: #FFFFFF;
+  --color-revit-accent: #00AEEF;
+  --color-revit-black: #121212;
+  --color-revit-border: #333333;
+  --color-revit-text-gray: #AAAAAA;
+}
+
+:root {
+  --background: #1E1E1E;
+  --foreground: #FFFFFF;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+.grid-canvas {
+  background-image: 
+    linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.markdown-body {
+  @apply text-sm leading-relaxed;
+}
+.markdown-body p {
+  @apply mb-2;
+}
+.markdown-body ul {
+  @apply list-disc pl-4 mb-2;
+}
+.markdown-body ol {
+  @apply list-decimal pl-4 mb-2;
+}
+.markdown-body a {
+  @apply text-revit-accent underline;
+}
